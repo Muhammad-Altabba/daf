@@ -2,7 +2,9 @@
   "extends": "../tsconfig.settings.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "build"
+    "outDir": "build",
+    "target": "ES5",
+    "lib": ["ES2015", "DOM"]
   },
   "references": [
     { "path": "../daf-core" },

@@ -6,7 +6,7 @@ import { Message } from 'daf-core'
 import { core } from './setup'
 
 app.get('/identities', async (req, res) => {
-  const identities = await core.identityManager.getIdentities()
+  const identities = await core.identityManager.getIdentities()                                                                                                                                                                                         
   res.json(identities.map(identity => identity.did))
 })
 

@@ -13,7 +13,6 @@ import * as DafLibSodium from 'daf-libsodium'
 import { DafResolver } from 'daf-resolver'
 import { ApolloServer } from 'apollo-server'
 import merge from 'lodash.merge'
-import ws from 'ws'
 
 TG.ServiceController.webSocketImpl = ws
 const infuraProjectId = '5ffc47f65c4042ce847ef66a3fa70d4c'

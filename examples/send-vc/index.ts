@@ -19,7 +19,7 @@ actionHandler.setNext(new TG.ActionHandler()).setNext(new W3c.ActionHandler())
 
 const infuraProjectId = '5ffc47f65c4042ce847ef66a3fa70d4c'
 
-const didResolver = new DafUniversalResolver({ url: 'https://uniresolver.io/1.0/identifiers/' })
+const didResolver = new DafUniversalResolver({ url: 'https://uniresolver.io/1.0/identifiers/' }) 
 
 export const core = new Daf.Core({
   identityProviders: [

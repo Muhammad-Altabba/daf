@@ -8,7 +8,6 @@ import { MessageValidator, unsupportedMessageTypeError } from './message/abstrac
 import { ActionHandler } from './action/action-handler'
 import { Action } from './types'
 import { Message } from './message/message'
-
 import Debug from 'debug'
 const debug = Debug('daf:core')
 
@@ -38,7 +37,6 @@ export class Core extends EventEmitter {
 
   constructor(config: Config) {
     super()
-
     this.identityManager = new IdentityManager({
       identityProviders: config.identityProviders,
     })
@@ -72,6 +70,7 @@ export class Core extends EventEmitter {
   }
 
   public async validateMessages(messages: Message[]): Promise<Message[]> {
+    
     const result: Message[] = []
     for (const message of messages) {
       try {

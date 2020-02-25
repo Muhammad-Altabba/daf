@@ -2,7 +2,6 @@ import { EventTypes, Message } from 'daf-core'
 import { core, dataStore } from './setup'
 import program from 'commander'
 import { setInterval } from 'timers'
-
 program
   .command('listen')
   .description('Receive new messages and listen for new ones')
